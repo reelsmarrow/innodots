@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Innodots Innovations</title>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      />
+        <link rel="stylesheet" href="assets/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/vendors/jquery/jquery.min.js"></script>
+
+        <script src="assets/js/loader.js"></script>
+    </head>
+  <style>
+    .video{
+       width: 100%;
+
+    }
+    
+.container h1 {
+    text-align: center;
+    padding-top: 10%;
+    margin-bottom: 60px;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  .container h1::after {
+    content: '';
+    background: #303ef7;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+  }
+  
+  .service {
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background: transparent;
+    transition: transform 0.5s, background 0.5s;
+  }
+  
+  .service i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #303ef7;
+  }
+  
+  .service .service_heading {
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .service:hover {
+    background: #303ef7;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  .service:hover i {
+    color: #fff;
+  }
+  
+  .service_para{
+    margin: 30px 0;
+  }
+  
+  .service_btn{
+    padding: 10px 12px;
+    border: 1px solid #303ef7;
+    border-radius: 10px;
+    text-decoration:none;
+  }
+  
+  .service_btn:hover{
+    color: #fff;
+  }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </style>
+    <body>
+        <div class="hiro-loader"></div>
+        <header class="hiro-header home-header" id="top">
+            <nav>
+                <div class="container">
+                    <div class="hiro-nav">
+                        <a href="index.html" class="nav-brand">
+                            <img src="assets/images/logo.svg" alt="Hiro"
+                                class="logo">
+                            <img src="assets/images/logo_white.svg" alt="Hiro"
+                                class="logo-white">
+                        </a>
+                        <button class="hiro-nav-popup-toggle">
+                            <svg width="20px" height="18px" viewBox="0 0 20 18"
+                                version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Hiro" stroke="none" stroke-width="1"
+                                    fill="none" fill-rule="evenodd">
+                                    <g id="hiro-agency"
+                                        transform="translate(-964.000000, -37.000000)"
+                                        fill="#FFFFFF">
+                                        <g id="Menu"
+                                            transform="translate(964.000000, 37.000000)">
+                                            <g id="menu">
+                                                <rect id="Rectangle"
+                                                    fill-rule="nonzero"
+                                                    x="-8.05281767e-14"
+                                                    y="7.50795322"
+                                                    width="19.9609942"
+                                                    height="2.4951462"></rect>
+                                                <rect id="Rectangle"
+                                                    fill-rule="nonzero"
+                                                    x="-8.05281767e-14"
+                                                    y="14.9964327"
+                                                    width="19.9609942"
+                                                    height="2.4951462"></rect>
+                                                <rect id="Rectangle"
+                                                    fill-rule="nonzero"
+                                                    x="-8.05281767e-14"
+                                                    y="0.0194736842"
+                                                    width="19.9609942"
+                                                    height="2.4951462"></rect>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+           
+        </header>
+        <div class="hiro-nav-popup-modal">
+            <div class="hiro-nav-popup-modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 menu-wrapper">
+                            <ul class="nav hiro-main-nav">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#about" class="nav-link">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#services" class="nav-link">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#works" class="nav-link">Works</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <div class="col-md-6 blog-posts text-white">
+                        <h5 class="popup-blog-headng">Blog</h5>
+                        <div class="media mb-4">
+                            <img src="assets/images/Blog_small2.jpg" alt="blog" width="86px" class="img-fluid mr-4">
+                            <div class="media-body align-self-end">
+                                <h5 class="popup-blog-post-title">Ambitious <br> designs</h5>
+                            </div>
+                        </div>
+                        <div class="media mb-4">
+                            <img src="assets/images/Blog_small1.jpg" alt="blog" width="86px" class="img-fluid mr-4">
+                            <div class="media-body align-self-end">
+                                <h5 class="popup-blog-post-title">The Collection <br> Cover Archive</h5>
+                            </div>
+                        </div>
+                        <p><a href="blog.html" class="text-white link-hover-fx text-decoration-none" class="font-weight-medium">View more</a></p>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section  id="about">
+         
+            <video src="assets/videos/desing.mp4" muted autoplay loop class="video"></video>
+
+        </section>
+        <div class="container">
+            <h1>Our Services</h1>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col service">
+                  <i class="fas fa-laptop-code"></i>
+                  <h2 class="service_heading">Project Management</h2>
+                  <p class="service_para">
+                    Embracing UI/UX in crafting seamless experiences, keeping up with efficiency and elegance
+                  </p>
+                       <a href="mailto:blogtriggers@gmail.com" class="service_btn"> Contact us </a>
+                </div>
+                <div class="col service">
+                  <i class="fas fa-laptop-code"></i>
+                  <h2 class="service_heading">Building Information Modeling
+                  </h2>
+                  <p class="service_para">
+                    By infusing the brand characteristics into the design process, we develop a  unique product for your brand
+                  </p>
+                       <a href="mailto:blogtriggers@gmail.com" class="service_btn"> Contact us </a>
+                </div>
+                <div class="col service">
+                  <i class="fas fa-laptop-code"></i>
+                  <h2 class="service_heading">Public Health Engineering</h2>
+                  <p class="service_para">
+                
+                    Unleashing the potential of mobile user experience to enhance moments of navigation with ease </p>
+                       <a href="mailto:blogtriggers@gmail.com" class="service_btn"> Contact us </a>
+                </div>
+              
+                
+            </div>
+
+            <!------------------------>
+              
+            
+           <br>
+           <br>
+             
+            
+             
+            <div class="row">
+              <div class="col service">
+                <i class="fas fa-laptop-code"></i>
+                <h2 class="service_heading">Fire Protection & Life Safety System</h2>
+                <p class="service_para">
+                    Crafting touchpoints and interactions that leave a positive user experience and enhance sales
+                </p>
+                     <a href="mailto:blogtriggers@gmail.com" class="service_btn"> Contact us </a>
+              </div>
+              <div class="col service">
+                <i class="fas fa-laptop-code"></i>
+                <h2 class="service_heading">Heating Ventilation & Air-Conditioning System</h2>
+                <p class="service_para">
+                    Empowering insights and efficiency with customised apps and dashboards tailored for your business
+                </p>
+                     <a href="mailto:blogtriggers@gmail.com" class="service_btn"> Contact us </a>
+              </div>
+              <div class="col service">
+                <i class="fas fa-laptop-code"></i>
+                <h2 class="service_heading">Integrated Building Management System</h2>
+                <p class="service_para">
+                    Designs that are ergonomically sound and help prevent errors while reducing operator workload
+                </p>
+                     <a href="mailto:blogtriggers@gmail.com" class="service_btn"> Contact us </a>
+              </div>
+            
+              
+          </div>
+
+          <br><br>
+          <!-------------------------------->
+
+          <div class="row">
+            <div class="col service">
+              <i class="fas fa-laptop-code"></i>
+              <h2 class="service_heading">Extra Low Voltage System</h2>
+              <p class="service_para">
+                Leveraging capabilities to create designs that are visually appealing and fit for the smallest of screens
+              </p>
+                   <a href="mailto:blogtriggers@gmail.com" class="service_btn"> Contact us </a>
+            </div>
+            <div class="col service">
+              <i class="fas fa-laptop-code"></i>
+              <h2 class="service_heading">VERTICAL TRANSPORTATION SYSTEM</h2>
+              <p class="service_para">
+                Designing beyond borders for experiences that resonate with users globally
+              </p>
+                   <a href="mailto:blogtriggers@gmail.com" class="service_btn"> Contact us </a>
+            </div>
+            <div class="col service">
+              <i class="fas fa-laptop-code"></i>
+              <h2 class="service_heading">Medical Gas Pipeline System </h2>
+              <p class="service_para">
+                Ensuring your design's longevity and excellence through continuous optimisation 
+              </p>
+                   <a href="mailto:blogtriggers@gmail.com" class="service_btn"> Contact us </a>
+            </div>
+          
+            
+        </div>
+              
+             
+            </div>
+          </div>
+
+        <!------------------------------------------------------------------------->
+  
+
+       
+        <footer class="hiro-footer wow fadeInUp">
+            <div
+                class="container d-flex flex-wrap justify-content-lg-between align-items-center">
+                <p class="mb-0 footer-text">© <a
+                        href="https://www.bootstrapdash.com" target="_blank"
+                        rel="noopener noreferrer" class="text-reset">Aswin</a>
+                    2020. All rights reserved.</p>
+                <nav class="footer-nav nav">
+                    <a href="#!" class="nav-link">Terms and Conditions</a>
+                    <a href="#!" class="nav-link">Privacy Policy</a>
+                    <a href="#!" class="nav-link">Cookie Policy</a>
+                </nav>
+            </div>
+        </footer>
+
+        <script src="assets/vendors/wowjs/wow.min.js"></script>
+        <script src="assets/vendors/popper.js/popper.min.js"></script>
+        <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+        new WOW().init();
+    </script>
+
+   
+
+</html>

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Innodots Innovations</title>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      />
+        <link rel="stylesheet" href="assets/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/vendors/jquery/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+        <link rel="stylesheet" href="assets/css/nav.css">
+    </head>
+  <style>
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  background-color: #000000;
+  z-index: 0;
+}
+p {
+  color: #fff;
+}
+/* -----------------------------------
+      Gallery Section
+--------------------------------------*/
+.portfolio-section {
+  padding: 50px 0;
+  background-color: #000;
+}
+.portfolio-section h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+.portfolio-menu {
+  text-align: center;
+}
+.control {
+  background: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border: 1px solid #343a40;
+  border-radius: 3px;
+  margin: 5px;
+  cursor: pointer;
+  -webkit-transition: all 05s ease;
+  -moz-transition: all 05s ease;
+  -ms-transition: all 05s ease;
+  -o-transition: all 05s ease;
+  transition: all 0.5s ease;
+}
+.control:hover {
+  background: #343a40;
+}
+.mixitup-control-active {
+  color: #fff;
+  background: #343a40;
+}
+.fancybox-container button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.portfolio-item {
+  padding-top: 30px;
+}
+.pd {
+  padding: 0;
+  padding: 10px;
+}
+.pd img {
+  height: 180px;
+  transition: all 0.5s;
+}
+.portfolio-overlay {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  visibility: hidden;
+  transition: all 0.5s;
+  transform: scale(0);
+}
+.portfolio-overlay p,
+.portfolio-overlay a {
+  position: relative;
+  z-index: 4;
+}
+.portfolio-overlay::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-width: 0;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  transition: 50ms height ease 150ms;
+  z-index: 3;
+}
+.portfolio-overlay::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-width: 0;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  transition: 100ms width ease 200ms;
+  z-index: 3;
+}
+.portfolio-item:hover .portfolio-overlay::before {
+  width: 80%;
+  height: 80%;
+  border-top: 1px solid #50977f;
+  border-right: 1px solid #50977f;
+  transition: width 0.1s ease 0.3s, height 0.1s ease 0.5s;
+}
+.portfolio-item:hover .portfolio-overlay::after {
+  width: 80%;
+  height: 80%;
+  border-bottom: 1px solid #50977f;
+  border-left: 1px solid #50977f;
+  transition: width 0.1s ease 0.6s, height 0.1s ease 0.7s;
+}
+.portfolio-item li:hover .portfolio-overlay {
+  visibility: visible;
+  transform: scale(1);
+}
+.portfolio-overlay .category {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}
+.portfolio-overlay .magnify-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background: #50977f;
+  margin: 0 5px;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.25s;
+}
+.portfolio-overlay .magnify-icon:hover {
+  background: #000;
+}
+.portfolio-overlay .magnify-icon p span i {
+  font-size: 15px;
+  color: #fff;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+/*******Responsive media query******/
+
+/* Extra small devices (portrait phones, less than 576px)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </style>
+    <body>
+        
+      <header class="header" id="header" style="background-color: black;">
+        <nav class="nav containerss">
+            <a href="#" class="nav__logo">
+                <img src="assets/images/dots wt.svg" alt="Your Logo">
+            </a>
+    
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                 </li>
+    
+                 <li class="nav__item">
+                    <a href="index.html" class="nav__link">About Us</a>
+                 </li>
+    
+                 <li class="nav__item">
+                    <a href="index.html" class="nav__link">Services</a>
+                 </li>
+    
+                
+                 <li class="nav__item">
+                    <a href="gallery.html" class="nav__link">Gallery</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="blog.html" class="nav__link">Blog</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="contact.html" class="nav__link">Contact Me</a>
+                 </li>
+              </ul>
+    
+              <!-- Close button -->
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-line"></i>
+              </div>
+           </div>
+    
+           <div class="nav__actions">
+             
+    
+              <!-- Toggle button -->
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line"></i>
+              </div>
+           </div>
+        </nav>
+     </header>
+        
+     <br>
+     <br>
+    
+       
+       <!------------------------------------------------------------------>
+      <div class="container">
+        <section class="portfolio-section" id="portfolio">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                  <h2> Gallery</h2>
+                
+                </div>
+              </div>
+              <div class="portfolio-menu mt-2 mb-4">
+            
+              </div>
+              <ul class="row portfolio-item">
+                <li class="mix dev col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                  <img src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" itemprop="thumbnail" alt="Image description" />
+                  <div class="portfolio-overlay">
+                    <div class="overlay-content">
+                      <p class="category">Project Name</p>
+                      <a href="#" title="View Project" target="_blank">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                      <a data-fancybox="item" title="click to zoom-in" href="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="mix web col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                  <img src="https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" itemprop="thumbnail" alt="Image description" />
+                  <div class="portfolio-overlay">
+                    <div class="overlay-content">
+                      <p class="category">Project Name</p>
+                      <a href="#" title="View Project" target="_blank">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                      <a data-fancybox="item" title="click to zoom-in" href="https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" data-size="1200x600">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="mix wp col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                  <img src="https://images.unsplash.com/photo-1520085601670-ee14aa5fa3e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" itemprop="thumbnail" alt="Image description" />
+                  <div class="portfolio-overlay">
+                    <div class="overlay-content">
+                      <p class="category">Project Name</p>
+                      <a href="#" title="View Project" target="_blank">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                      <a data-fancybox="item" title="click to zoom-in" href="https://images.unsplash.com/photo-1520085601670-ee14aa5fa3e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" data-size="1200x600">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="mix dev col-xl-3 col-md-4 col-12 col-sm-6 pd ">
+                  <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" itemprop="thumbnail" alt="Image description" />
+                  <div class="portfolio-overlay">
+                    <div class="overlay-content">
+                      <p class="category">Project Name</p>
+                      <a href="#" title="View Project" target="_blank">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                      <a data-fancybox="item" title="click to zoom-in" href="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" data-size="1200x600">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="mix web col-xl-3 col-md-4 col-12 col-sm-6 pd ">
+                  <img src="https://images.unsplash.com/photo-1534665482403-a909d0d97c67?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" itemprop="thumbnail" alt="Image description" />
+                  <div class="portfolio-overlay">
+                    <div class="overlay-content">
+                      <p class="category">Project Name</p>
+                      <a href="#" title="View Project" target="_blank">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                      <a data-fancybox="item" title="click to zoom-in" href="https://images.unsplash.com/photo-1534665482403-a909d0d97c67?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" data-size="1200x600">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="mix wp col-xl-3 col-md-4 col-12 col-sm-6 pd ">
+                  <img src="https://images.unsplash.com/photo-1581472723648-909f4851d4ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" itemprop="thumbnail" alt="Image description" />
+                  <div class="portfolio-overlay">
+                    <div class="overlay-content">
+                      <p class="category">Project Name</p>
+                      <a href="#" title="View Project" target="_blank">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                      <a data-fancybox="item" title="click to zoom-in" href="https://images.unsplash.com/photo-1581472723648-909f4851d4ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" data-size="1200x600">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="mix dev col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                  <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" itemprop="thumbnail" alt="Image description" />
+                  <div class="portfolio-overlay">
+                    <div class="overlay-content">
+                      <p class="category">Project Name</p>
+                      <a href="#" title="View Project" target="_blank">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                      <a data-fancybox="item" title="click to zoom-in" href="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" data-size="1200x600">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="mix web col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                  <img src="https://images.unsplash.com/photo-1605379399843-5870eea9b74e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=898&q=80" itemprop="thumbnail" alt="Image description" />
+                  <div class="portfolio-overlay">
+                    <div class="overlay-content">
+                      <p class="category">Project Name</p>
+                      <a href="#" title="View Project" target="_blank">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                      <a data-fancybox="item" title="click to zoom-in" href="https://images.unsplash.com/photo-1605379399843-5870eea9b74e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=898&q=80" data-size="1200x600">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="mix wp col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                  <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" itemprop="thumbnail" alt="Image description" />
+                  <div class="portfolio-overlay">
+                    <div class="overlay-content">
+                      <p class="category">Project Name</p>
+                      <a href="#" title="View Project" target="_blank">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                      <a data-fancybox="item" title="click to zoom-in" href="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" data-size="1200x600">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="mix dev col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                  <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" itemprop="thumbnail" alt="Image description" />
+                  <div class="portfolio-overlay">
+                    <div class="overlay-content">
+                      <p class="category">Project Name</p>
+                      <a href="#" title="View Project" target="_blank">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                      <a data-fancybox="item" title="click to zoom-in" href="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" data-size="1200x600">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="mix web col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                  <img src="https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" itemprop="thumbnail" alt="Image description" />
+                  <div class="portfolio-overlay">
+                    <div class="overlay-content">
+                      <p class="category">Project Name</p>
+                      <a href="#" title="View Project" target="_blank">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                      <a data-fancybox="item" title="click to zoom-in" href="https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" data-size="1200x600">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="mix wp col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                  <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80" itemprop="thumbnail" alt="Image description" />
+                  <div class="portfolio-overlay">
+                    <div class="overlay-content">
+                      <p class="category">Project Name</p>
+                      <a href="#" title="View Project" target="_blank">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                      <a data-fancybox="item" title="click to zoom-in" href="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80" data-size="1200x600">
+                        <div class="magnify-icon">
+                          <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+      </div>
+            
+    
+        <!------------------------------------------------------------------------->
+  
+
+      <footer class="hiro-footer wow fadeInUp" style="background-color: black">
+        <div class="container d-flex flex-wrap justify-content-lg-between align-items-center" >
+            <p class="mb-0 footer-text"  style="color: #fff;">© <a href="" target="_blank" rel="noopener noreferrer" class="text-reset">Innodots Innovations</a> 2024. All rights reserved.</p>
+            <nav class="footer-nav nav">
+                <a href="#!" class="nav-link" style="color: #fff;">Terms and Conditions</a>
+                <a href="#!" class="nav-link"  style="color: #fff;">Privacy Policy</a>
+                <a href="#!" class="nav-link"  style="color: #fff;">Cookie Policy</a>
+            </nav>
+        </div>
+    </footer>
+
+        <script src="assets/vendors/wowjs/wow.min.js"></script>
+        <script src="assets/vendors/popper.js/popper.min.js"></script>
+        <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+        new WOW().init();
+    </script>
+    <script>
+      /*=============== SHOW MENU ===============*/
+  const navMenu = document.getElementById('nav-menu'),
+        navToggle = document.getElementById('nav-toggle'),
+        navClose = document.getElementById('nav-close')
+  
+  /* Menu show */
+  navToggle.addEventListener('click', () =>{
+     navMenu.classList.add('show-menu')
+  })
+  
+  /* Menu hidden */
+  navClose.addEventListener('click', () =>{
+     navMenu.classList.remove('show-menu')
+  })
+  
+  
+  
+  </script>
+
+   
+
+</html>
