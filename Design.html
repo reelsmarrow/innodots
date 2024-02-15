@@ -1,142 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Innodots Innovations</title>
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      />
-        <link rel="stylesheet" href="assets/vendors/animate.css/animate.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <script src="assets/vendors/jquery/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Innodots Innovations</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="assets/vendors/animate.css/animate.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/vendors/jquery/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
-        <link rel="stylesheet" href="assets/css/nav.css">
-    </head>
-  <style>
-    .video {
-      width: 100%; /* Set video width to 100% of the container */
-      height: auto; /* Maintain aspect ratio */
-  }
+  <link rel="stylesheet" href="assets/css/nav.css">
+</head>
 
-  /* Styles for larger screens (non-mobile) */
-  @media only screen and (min-width: 600px) {
-      .video {
-          display: block; /* Show the video for larger screens */
-      }
-      .mobile-image {
-          display: none; /* Hide the mobile image for larger screens */
-      }
-  }
-
-  /* Styles for smaller screens (mobile) */
-  @media only screen and (max-width: 599px) {
-      .video {
-          display: none; /* Hide the video for smaller screens */
-      }
-      .mobile-image {
-          display: block; /* Show the mobile image for smaller screens */
-          width: 100%; /* Set image width to 100% of the container */
-          height: auto; /* Maintain aspect ratio */
-      }
-  }
-    
-
+<style>
   .section-services {
-	font-family: "Poppins", sans-serif;
-	background-color: #e6edf7;
-	color: #202020;
-	padding-top: 115px;
+    font-family: "Poppins", sans-serif;
+    background-color: #e6edf7;
+    color: #202020;
+    padding-top: 115px;
     padding-bottom: 120px;
-}
+  }
 
-.section-services .header-section {
-	margin-bottom: 34px;
-}
+  .section-services .header-section {
+    margin-bottom: 34px;
+  }
 
-.section-services .header-section .title {
-	position: relative;
+  .section-services .header-section .title {
+    position: relative;
     padding-bottom: 14px;
     margin-bottom: 25px;
-	font-weight: 700;
+    font-weight: 700;
     font-size: 32px;
-}
+  }
 
-.section-services .header-section .title:before {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 50px;
-	height: 3px;
-	background-color: #ff4500;
+  .section-services .header-section .title:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #ff4500;
     border-radius: 3px;
-}
+  }
 
-.section-services .header-section .title:after {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 50%;
+  .section-services .header-section .title:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
     transform: translateX(30px);
-	width: 10px;
-	height: 3px;
-	background-color: #504f93;
+    width: 10px;
+    height: 3px;
+    background-color: #504f93;
     border-radius: 3px;
-}
+  }
 
-.section-services .header-section .description {
-	font-size: 14px;
+  .section-services .header-section .description {
+    font-size: 14px;
     color: #282828;
-}
+  }
 
-.section-services .single-service {
+  .section-services .single-service {
     position: relative;
     margin-top: 30px;
     background-color: #fff;
     border-radius: 10px;
     padding: 40px 30px;
     overflow: hidden;
-}
+  }
 
-.section-services .single-service .content {
-	position: relative;
-	z-index: 20;
-}
+  .section-services .single-service .content {
+    position: relative;
+    z-index: 20;
+  }
 
-.section-services .single-service .circle-before {
+  .section-services .single-service .circle-before {
     position: absolute;
     top: 0;
     right: 0px;
     transform: translate(40%, -40%);
     width: 150px;
     height: 150px;
-    background-color: rgba(34,23,115,255);;
+    background-color: rgba(34, 23, 115, 255);
+    ;
     border: 6px solid #504f93;
     border-radius: 50%;
     opacity: 0.5;
     z-index: 10;
     transition: all .6s;
-}
+  }
 
-.section-services .single-service:hover .circle-before {
-	width: 100%;
-	height: 100%;
-	transform: none;
-	border: 0;
-	border-radius: 0;
-	opacity: 1;
-}
+  .section-services .single-service:hover .circle-before {
+    width: 100%;
+    height: 100%;
+    transform: none;
+    border: 0;
+    border-radius: 0;
+    opacity: 1;
+  }
 
-.section-services .single-service .icon {
-	display: inline-block;
-	margin-bottom: 26px;
+  .section-services .single-service .icon {
+    display: inline-block;
+    margin-bottom: 26px;
     width: 70px;
     height: 70px;
     background-color: #ff4500;
@@ -146,278 +117,375 @@
     color: #fff;
     font-size: 30px;
     transition: all .3s;
-}
+  }
 
-.section-services .single-service:hover .icon {
-	background-color: #fff;
-	color: #ff4500;
-}
+  .section-services .single-service:hover .icon {
+    background-color: #fff;
+    color: #ff4500;
+  }
 
-.section-services .single-service .title {
+  .section-services .single-service .title {
     margin-bottom: 18px;
-	font-weight: 700;
+    font-weight: 700;
     font-size: 23px;
     transition: color .3s;
-}
+  }
 
-.section-services .single-service:hover .title {
-	color: #fff;
-}
+  .section-services .single-service:hover .title {
+    color: #fff;
+  }
 
-.section-services .single-service .description {
+  .section-services .single-service .description {
     margin-bottom: 20px;
     font-size: 14px;
     transition: color .3s;
-}
+  }
 
-.section-services .single-service:hover .description {
-	color: #fff;
-}
+  .section-services .single-service:hover .description {
+    color: #fff;
+  }
 
-.section-services .single-service a {
-	position: relative;
-	font-size: 18px;
+  .section-services .single-service a {
+    position: relative;
+    font-size: 18px;
     color: #202020;
     text-decoration: none;
     font-weight: 500;
     transition: color .3s;
-}
+  }
 
-.section-services .single-service:hover a {
-	color: #fff;
-}
+  .section-services .single-service:hover a {
+    color: #fff;
+  }
 
-.section-services .single-service a:after {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 1px;
-	background-color: #ff4500;
-	transition: background-color .3s;
-}
+  .section-services .single-service a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #ff4500;
+    transition: background-color .3s;
+  }
 
-.section-services .single-service:hover a:after {
-	background-color: #fff;
-}
-    
+  .section-services .single-service:hover a:after {
+    background-color: #fff;
+  }
+</style>
 
+<body>
 
+  <!-- Topbar Start -->
+  <div class="container-fluid topbar-top bg-primary">
+    <div class="container">
+      <div class="d-flex justify-content-between topbar py-2">
+        <div class="d-flex align-items-center flex-shrink-0 topbar-info">
+          <a href="#" class="me-4 text-secondary"><i class="fas fa-map-marker-alt me-2 text-dark"></i>Asiatic Business
+            Centre,Trivandrum Kerala,</a>
+          <a href="#" class="me-4 text-secondary"><i class="fas fa-phone-alt me-2 text-dark"></i>+91 8921674006</a>
+          <a href="#" class="text-secondary"><i class="fas fa-envelope me-2 text-dark"></i>info@innodotsglobal.com</a>
+        </div>
+        <div class="text-end pe-4 me-4 border-end border-dark search-btn">
+          <div class="search-form">
+            <form method="post" action="index.html">
+              <div class="form-group">
 
-
-
-
-
-
-
-
-
-
-
-  </style>
-    <body>
-        
-      <header class="header" id="header" style="background-color: black;">
-        <nav class="nav containerss">
-            <a href="#" class="nav__logo">
-                <img src="assets/images/dots wt.svg" alt="Your Logo">
-            </a>
-    
-           <div class="nav__menu" id="nav-menu">
-              <ul class="nav__list">
-                 <li class="nav__item">
-                    <a href="index.html" class="nav__link">Home</a>
-                 </li>
-    
-                 <li class="nav__item">
-                    <a href="index.html" class="nav__link">About Us</a>
-                 </li>
-    
-                 <li class="nav__item">
-                    <a href="index.html" class="nav__link">Services</a>
-                 </li>
-    
-                
-                 <!-- <li class="nav__item">
-                    <a href="gallery.html" class="nav__link">Gallery</a>
-                 </li> -->
-                 <li class="nav__item">
-                    <a href="blog.html" class="nav__link">Blog</a>
-                 </li>
-                 <li class="nav__item">
-                    <a href="contact.html" class="nav__link">Contact Me</a>
-                 </li>
-              </ul>
-    
-              <!-- Close button -->
-              <div class="nav__close" id="nav-close">
-                 <i class="ri-close-line"></i>
               </div>
-           </div>
-    
-           <div class="nav__actions">
-             
-    
-              <!-- Toggle button -->
-              <div class="nav__toggle" id="nav-toggle">
-                 <i class="ri-menu-line"></i>
-              </div>
-           </div>
-        </nav>
-     </header>
-        
-     <br>
-       
-       <!------------------------------------------------------------------>
-              
-            
-       <section class="section-services">
-        <div class="container">
-          <div class="row justify-content-center text-center">
-            <div class="col-md-10 col-lg-8">
-              <div class="header-section">
-                <h2 class="title">Design Services</h2>
-                <p class="description">Innodots Innovations - Elevating Ideas through Design Excellence</p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <!-- Single Service -->
-            <div class="col-md-6 col-lg-4">
-              <div class="single-service">
-                <div class="content">
-                  <span class="icon">
-                    <i class="fa-brands fa-uikit"></i>
-                  </span>
-                  <h3 class="title">UI/UX Design</h3>
-                  <p class="description">Welcome to Innodots, where we redefine digital interactions through thoughtful and intuitive design. Specializing in user interface (UI) and user experience (UX) design, we bring a seamless blend of aesthetics and functionality to create engaging digital experiences.</p>
-                  <a href="https://wa.me/+918921674006" class="learn-more">Contact Us</a>
-                </div>
-                <span class="circle-before"></span>
-              </div>
-            </div>
-            <!-- / End Single Service -->
-            <!-- Single Service -->
-            <div class="col-md-6 col-lg-4">
-              <div class="single-service">
-                <div class="content">
-                  <span class="icon">
-                    <i class="fa-solid fa-desktop"></i>
-                  </span>
-                  <h3 class="title">Web Experience</h3>
-                  <p class="description">Welcome to Innodots, where we redefine online engagement through cutting-edge design and user-centric innovation. Our mission is to elevate your digital presence, creating web experiences that captivate, resonate, and leave a lasting impact.</p>
-                  <a href="https://wa.me/+918921674006" class="learn-more">Contact Us</a>
-                </div>
-                <span class="circle-before"></span>
-              </div>
-            </div>
-            <!-- / End Single Service -->
-            <!-- Single Service -->
-            <div class="col-md-6 col-lg-4">
-              <div class="single-service">
-                <div class="content">
-                  <span class="icon">
-                    <i class="fa-solid fa-mobile-screen"></i>
-                  </span>
-                  <h3 class="title">Mobile Experience</h3>
-                  <p class="description">Welcome to Innodots, where we specialize in crafting mobile interfaces that redefine user engagement and elevate digital interactions. In a world where mobile devices play a central role, our mission is to ensure that your brand stands out with intuitive, visually stunning, and performance-driven mobile experiences.</p>
-                  <a href="https://wa.me/+918921674006" class="learn-more">Contact Us</a>
-                </div>
-                <span class="circle-before"></span>
-              </div>
-            </div>
-            <!-- / End Single Service -->
-            <!-- Single Service -->
-            <div class="col-md-6 col-lg-4">
-              <div class="single-service">
-                <div class="content">
-                  <span class="icon">
-                    <i class="fa-solid fa-caret-up"></i>
-                  </span>
-                  <h3 class="title">Commerce Experience</h3>
-                  <p class="description">Welcome to Innodots, where we specialize in creating digital commerce experiences that transcend transactions and forge lasting connections between brands and consumers. In the ever-evolving landscape of digital commerce, we're here to ensure that your brand not only meets but exceeds the expectations of the modern shopper</p>
-                  <a href="https://wa.me/+918921674006" class="learn-more">Contact Us</a>
-                </div>
-                <span class="circle-before"></span>
-              </div>
-            </div>
-            <!-- / End Single Service -->
-            <!-- Single Service -->
-            <div class="col-md-6 col-lg-4">
-              <div class="single-service">
-                <div class="content">
-                  <span class="icon">
-                    <i class="fa-solid fa-robot"></i>
-                  </span>
-                  <h3 class="title">Human Machine Interface (HMI)</h3>
-                  <p class="description">Welcome to Innodots, where we redefine the way humans interact with machines. Our Human-Machine Interface solutions seamlessly bridge the gap between users and technology, creating intuitive, efficient, and user-friendly interfaces across various industries.</p>
-                  <a href="https://wa.me/+918921674006" class="learn-more">Contact Us</a>
-                </div>
-                <span class="circle-before"></span>
-              </div>
-            </div>
-            <!-- / End Single Service -->
-            <!-- Single Service -->
-            <div class="col-md-6 col-lg-4">
-              <div class="single-service">
-                <div class="content">
-                  <span class="icon">
-                    <i class="fas fa-laptop-code"></i>
-                  </span>
-                  <h3 class="title">Applications and Dashboards </h3>
-                  <p class="description">Welcome to Innodots, where we specialize in developing cutting-edge applications and dashboards that turn data into actionable insights. Our mission is to empower businesses with intuitive, visually compelling, and highly functional digital solutions.</p>
-                  <a href="https://wa.me/+918921674006" class="learn-more">Contact Us</a>
-                </div>
-                <span class="circle-before"></span>
-              </div>
-            </div>
-            <!-- / End Single Service -->
+            </form>
           </div>
         </div>
-      </section>
+        <div class="d-flex align-items-center justify-content-center topbar-icon">
+          <a href="https://www.facebook.com/people/Innodots-Technologies-Pvt-Ltd/61551465137990/?mibextid=ZbWKwL"
+            class="me-4"><i class="fab fa-facebook-f text-dark"></i></a>
+          <a href="" class="me-4"><i class="fab fa-twitter text-dark"></i></a>
+          <a href="https://www.instagram.com/innodots_innovations/" class="me-4"><i
+              class="fab fa-instagram text-dark"></i></a>
+          <a href="https://in.linkedin.com/company/innodots-innovations" class=""><i
+              class="fab fa-linkedin-in text-dark"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Topbar End -->
 
-        <!------------------------------------------------------------------------->
-  
 
-      <footer class="hiro-footer wow fadeInUp" style="background-color: black">
-        <div class="container d-flex flex-wrap justify-content-lg-between align-items-center" >
-            <p class="mb-0 footer-text"  style="color: #fff;">© <a href="" target="_blank" rel="noopener noreferrer" class="text-reset">Innodots Innovations</a> 2024. All rights reserved.</p>
-            <nav class="footer-nav nav">
-                <a href="#!" class="nav-link" style="color: #fff;">Terms and Conditions</a>
-                <a href="#!" class="nav-link"  style="color: #fff;">Privacy Policy</a>
-                <a href="#!" class="nav-link"  style="color: #fff;">Cookie Policy</a>
-            </nav>
+  <!-- Navbar Start -->
+  <div class="container-fluid bg-white">
+    <div class="container">
+      <nav class="navbar navbar-dark navbar-expand-lg py-lg-0">
+        <a href="index.html" class="navbar-brand">
+          <img id="logo" src="assets/images/innologo-removebg-preview.png" alt="Logo"
+            style="height: 80px; width: auto;">
+        </a>
+        <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars text-dark"></span>
+        </button>
+        <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
+          <div class="navbar-nav ms-auto">
+            <a href="index.html" class="nav-item nav-link active"
+              style="color: black;  font-weight: bold;font-size: 20px; ">Home</a>
+            <a href="#about" class="nav-item nav-link"
+              style="color: black;  font-weight: bold; font-size: 20px;">About</a>
+            <a href="#Services" class="nav-item nav-link"
+              style="color: black;  font-weight: bold;font-size: 20px; ">Services</a>
+            <a href="blog.html" class="nav-item nav-link"
+              style="color: black;  font-weight: bold;font-size: 20px; ">Blog</a>
+            <a href="contact.html" class="nav-item nav-link"
+              style="color: black;  font-weight: bold;font-size: 20px; ">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- Navbar End -->
+
+
+
+  <!------------------------------------------------------------------>
+
+
+  <section class="section-services">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-10 col-lg-8">
+          <div class="header-section">
+            <h2 class="title">Design Services</h2>
+            <p class="description">Innodots Innovations - Elevating Ideas through Design Excellence</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Single Service -->
+        <div class="col-md-6 col-lg-4">
+          <div class="single-service">
+            <div class="content">
+              <span class="icon">
+                <i class="fa-brands fa-uikit"></i>
+              </span>
+              <h3 class="title">UI/UX Design</h3>
+              <p class="description">Welcome to Innodots, where we redefine digital interactions through thoughtful and
+                intuitive design. Specializing in user interface (UI) and user experience (UX) design, we bring a
+                seamless blend of aesthetics and functionality to create engaging digital experiences.</p>
+              <a href="https://wa.me/+918921674006" class="learn-more">Contact Us</a>
+            </div>
+            <span class="circle-before"></span>
+          </div>
+        </div>
+        <!-- / End Single Service -->
+        <!-- Single Service -->
+        <div class="col-md-6 col-lg-4">
+          <div class="single-service">
+            <div class="content">
+              <span class="icon">
+                <i class="fa-solid fa-desktop"></i>
+              </span>
+              <h3 class="title">Web Experience</h3>
+              <p class="description">Welcome to Innodots, where we redefine online engagement through cutting-edge
+                design and user-centric innovation. Our mission is to elevate your digital presence, creating web
+                experiences that captivate, resonate, and leave a lasting impact.</p>
+              <a href="https://wa.me/+918921674006" class="learn-more">Contact Us</a>
+            </div>
+            <span class="circle-before"></span>
+          </div>
+        </div>
+        <!-- / End Single Service -->
+        <!-- Single Service -->
+        <div class="col-md-6 col-lg-4">
+          <div class="single-service">
+            <div class="content">
+              <span class="icon">
+                <i class="fa-solid fa-mobile-screen"></i>
+              </span>
+              <h3 class="title">Mobile Experience</h3>
+              <p class="description">Welcome to Innodots, where we specialize in crafting mobile interfaces that
+                redefine user engagement and elevate digital interactions. In a world where mobile devices play a
+                central role, our mission is to ensure that your brand stands out with intuitive, visually stunning, and
+                performance-driven mobile experiences.</p>
+              <a href="https://wa.me/+918921674006" class="learn-more">Contact Us</a>
+            </div>
+            <span class="circle-before"></span>
+          </div>
+        </div>
+        <!-- / End Single Service -->
+        <!-- Single Service -->
+        <div class="col-md-6 col-lg-4">
+          <div class="single-service">
+            <div class="content">
+              <span class="icon">
+                <i class="fa-solid fa-caret-up"></i>
+              </span>
+              <h3 class="title">Commerce Experience</h3>
+              <p class="description">Welcome to Innodots, where we specialize in creating digital commerce experiences
+                that transcend transactions and forge lasting connections between brands and consumers. In the
+                ever-evolving landscape of digital commerce, we're here to ensure that your brand not only meets but
+                exceeds the expectations of the modern shopper</p>
+              <a href="https://wa.me/+918921674006" class="learn-more">Contact Us</a>
+            </div>
+            <span class="circle-before"></span>
+          </div>
+        </div>
+        <!-- / End Single Service -->
+        <!-- Single Service -->
+        <div class="col-md-6 col-lg-4">
+          <div class="single-service">
+            <div class="content">
+              <span class="icon">
+                <i class="fa-solid fa-robot"></i>
+              </span>
+              <h3 class="title">Human Machine Interface (HMI)</h3>
+              <p class="description">Welcome to Innodots, where we redefine the way humans interact with machines. Our
+                Human-Machine Interface solutions seamlessly bridge the gap between users and technology, creating
+                intuitive, efficient, and user-friendly interfaces across various industries.</p>
+              <a href="https://wa.me/+918921674006" class="learn-more">Contact Us</a>
+            </div>
+            <span class="circle-before"></span>
+          </div>
+        </div>
+        <!-- / End Single Service -->
+        <!-- Single Service -->
+        <div class="col-md-6 col-lg-4">
+          <div class="single-service">
+            <div class="content">
+              <span class="icon">
+                <i class="fas fa-laptop-code"></i>
+              </span>
+              <h3 class="title">Applications and Dashboards </h3>
+              <p class="description">Welcome to Innodots, where we specialize in developing cutting-edge applications
+                and dashboards that turn data into actionable insights. Our mission is to empower businesses with
+                intuitive, visually compelling, and highly functional digital solutions.</p>
+              <a href="https://wa.me/+918921674006" class="learn-more">Contact Us</a>
+            </div>
+            <span class="circle-before"></span>
+          </div>
+        </div>
+        <!-- / End Single Service -->
+      </div>
+    </div>
+  </section>
+
+  <!------------------------------------------------------------------------->
+
+
+
+  <!-----------mobile view------------------->
+
+  <footer class="d-lg-none">
+
+    <footer id="footer" class="footer-1" style="background-color: #4b92dc;">
+      <div class="main-footer widgets-dark typo-light">
+        <div class="container">
+          <div class="row">
+
+
+
+
+
+
+
+
+
+            <br>
+            <br>
+
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="widget no-box">
+                <h5 class="widget-title">Contact Us<span></span></h5>
+                <p>With Our Skills & Creativity Put Together, You Get An Ensemble Capable Of Doing Anything And
+                  Everything Your Brand Needs. Subscribe Here To Get Our Latest Updates.</p>
+
+                <p class="font-weight-medium"> 2nd floor, Connect hive,Asiatic Business Centre,near technopark
+                  Kazhakuttam,Trivandrum
+                  Kerala,
+                  <br> 695582
+                  India, <br>
+                </p>
+                <p class="font-weight-medium">+91 8921674006
+                  <br> info@innodotsglobal.com
+                  <br>md@innodotsglobal.com
+
+                </p>
+                <div class="emailfield">
+                  <input type="text" name="email" value="Email">
+                  <input name="uri" type="hidden" value="arabiantheme">
+                  <input name="loc" type="hidden" value="en_US">
+                  <input class="submitbutton ripplelink" type="submit" value="Subscribe">
+                  </form>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <p>© Innodots Innovations 2024. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
         </div>
     </footer>
+  </footer>
 
-        <script src="assets/vendors/wowjs/wow.min.js"></script>
-        <script src="assets/vendors/popper.js/popper.min.js"></script>
-        <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script>
-        new WOW().init();
-    </script>
-    <script>
-      /*=============== SHOW MENU ===============*/
-  const navMenu = document.getElementById('nav-menu'),
-        navToggle = document.getElementById('nav-toggle'),
-        navClose = document.getElementById('nav-close')
-  
-  /* Menu show */
-  navToggle.addEventListener('click', () =>{
-     navMenu.classList.add('show-menu')
-  })
-  
-  /* Menu hidden */
-  navClose.addEventListener('click', () =>{
-     navMenu.classList.remove('show-menu')
-  })
-  
-  
-  
+  <!-----------desktop view--------------------->
+
+
+  <footer class="new_footer_area bg_color d-none d-lg-block" style="background-color: rgba(34,23,115,255)">
+    <div class="new_footer_top">
+      <div class="container">
+        <div class="row">
+
+
+
+        </div>
+      </div>
+      <div class="footer_bg">
+        <div class="footer_bg_one"></div>
+        <div class="footer_bg_two"></div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-sm-7">
+            <p class="mb-0 f_400" style="color: #ddd;">© Innodots Innovations 2024. All rights reserved.</p>
+          </div>
+          <div class="col-lg-6 col-sm-5 text-right">
+            <p style="color: #ddd;"><i class="icon_heart"></i> @<a href="https://innodotstech.com/" target="_blank "
+                style="color: #ddd;">Innodots Innovations PVT LTD
+              </a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!------------end deskto view------------------>
+
+  <script src="assets/vendors/wowjs/wow.min.js"></script>
+  <script src="assets/vendors/popper.js/popper.min.js"></script>
+  <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var navbarToggle = document.querySelector(".navbar-toggler");
+      var navbarCollapse = document.querySelector("#navbarCollapse");
+
+      navbarToggle.addEventListener("click", function () {
+        navbarCollapse.classList.toggle("show");
+      });
+    });
   </script>
 
-   
+
 
 </html>
