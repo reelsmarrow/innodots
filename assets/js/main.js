@@ -75,3 +75,19 @@ function doAnimations(elems) {
       .find("[data-animation ^= 'animated']");
     doAnimations($animatingElems);
   });
+
+
+
+
+
+
+  
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var navbarToggle = document.querySelector(".navbar-toggler");
+    var navbarCollapse = document.querySelector("#navbarCollapse");
+
+    navbarToggle.addEventListener("click", function() {
+        navbarCollapse.classList.toggle("show");
+    });
+});
