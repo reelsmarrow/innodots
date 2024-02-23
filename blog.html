@@ -414,61 +414,75 @@ a.author__img-wrapper img {
  </style>
     <body>
         
-      <header class="header" id="header" style="background-color: black;">
-        <nav class="nav containerss">
-            <a href="#" class="nav__logo">
-                <img src="assets/images/dots wt.svg" alt="Your Logo">
+      <div class="container-fluid topbar-top bg-primary">
+        <div class="container">
+          <div class="d-flex justify-content-between topbar py-2">
+            <div class="d-flex align-items-center flex-shrink-0 topbar-info">
+              <a href="#" class="me-4 text-secondary"><i class="fas fa-map-marker-alt me-2 text-dark"></i>Asiatic Business
+                Centre,Trivandrum Kerala,</a>
+              <a href="#" class="me-4 text-secondary"><i class="fas fa-phone-alt me-2 text-dark"></i>+91 8921674006</a>
+              <a href="#" class="text-secondary"><i class="fas fa-envelope me-2 text-dark"></i>info@innodotsglobal.com</a>
+            </div>
+            <div class="text-end pe-4 me-4 border-end border-dark search-btn">
+              <div class="search-form">
+                <form method="post" action="index.html">
+                  <div class="form-group">
+    
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center topbar-icon">
+              <a href="https://www.facebook.com/people/Innodots-Technologies-Pvt-Ltd/61551465137990/?mibextid=ZbWKwL"
+                class="me-4"><i class="fab fa-facebook-f text-dark"></i></a>
+              <a href="" class="me-4"><i class="fab fa-twitter text-dark"></i></a>
+              <a href="https://www.instagram.com/innodots_innovations/" class="me-4"><i
+                  class="fab fa-instagram text-dark"></i></a>
+              <a href="https://in.linkedin.com/company/innodots-innovations" class=""><i
+                  class="fab fa-linkedin-in text-dark"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Topbar End -->
+    
+    
+      <!-- Navbar Start -->
+      <div class="container-fluid bg-white">
+        <div class="container">
+          <nav class="navbar navbar-dark navbar-expand-lg py-lg-0">
+            <a href="index.html" class="navbar-brand">
+              <img id="logo" src="assets/images/innologo-removebg-preview.png" alt="Logo"
+                style="height: 80px; width: auto;">
             </a>
-    
-           <div class="nav__menu" id="nav-menu">
-              <ul class="nav__list">
-                 <li class="nav__item">
-                    <a href="index.html" class="nav__link">Home</a>
-                 </li>
-    
-                 <li class="nav__item">
-                    <a href="index.html" class="nav__link">About Us</a>
-                 </li>
-    
-                 <li class="nav__item">
-                    <a href="index.html" class="nav__link">Services</a>
-                 </li>
-    
-                
-                 <!-- <li class="nav__item">
-                    <a href="gallery.html" class="nav__link">Gallery</a>
-                 </li> -->
-                 <li class="nav__item">
-                    <a href="blog.html" class="nav__link">Blog</a>
-                 </li>
-                 <li class="nav__item">
-                    <a href="contact.html" class="nav__link">Contact Me</a>
-                 </li>
-              </ul>
-    
-              <!-- Close button -->
-              <div class="nav__close" id="nav-close">
-                 <i class="ri-close-line"></i>
+            <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse">
+              <span class="fa fa-bars text-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
+              <div class="navbar-nav ms-auto">
+                <a href="index.html" class="nav-item nav-link active"
+                  style="color: black;  font-weight: bold;font-size: 20px; ">Home</a>
+                <a href="#about" class="nav-item nav-link"
+                  style="color: black;  font-weight: bold; font-size: 20px;">About</a>
+                <a href="#Services" class="nav-item nav-link"
+                  style="color: black;  font-weight: bold;font-size: 20px; ">Services</a>
+                <a href="blog.html" class="nav-item nav-link"
+                  style="color: black;  font-weight: bold;font-size: 20px; ">Blog</a>
+                <a href="contact.html" class="nav-item nav-link"
+                  style="color: black;  font-weight: bold;font-size: 20px; ">Contact</a>
               </div>
-           </div>
-    
-           <div class="nav__actions">
-             
-    
-              <!-- Toggle button -->
-              <div class="nav__toggle" id="nav-toggle">
-                 <i class="ri-menu-line"></i>
-              </div>
-           </div>
-        </nav>
-     </header>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- Navbar End -->
         
-     <br>
-     <br>
+    
     
        
        <!------------------------------------------------------------------>
-     <section>
+     <section style="background-color: #e6edf7;">
       <article class="ad5-padding-y-lg">
         <header class="ad5-container ad5-max-width-xs ad5-margin-bottom-lg">
           <div class="ad5-text-component ad5-text-center ad5-line-height-lg ad5-text-gap-md ad5-margin-bottom-md">
@@ -575,18 +589,101 @@ a.author__img-wrapper img {
     
         <!------------------------------------------------------------------------->
   
+  <!-----------mobile view------------------->
 
-      <footer class="hiro-footer wow fadeInUp" style="background-color: black">
-        <div class="container d-flex flex-wrap justify-content-lg-between align-items-center" >
-            <p class="mb-0 footer-text"  style="color: #fff;">© <a href="" target="_blank" rel="noopener noreferrer" class="text-reset">Innodots Innovations</a> 2024. All rights reserved.</p>
-            <nav class="footer-nav nav">
-                <a href="#!" class="nav-link" style="color: #fff;">Terms and Conditions</a>
-                <a href="#!" class="nav-link"  style="color: #fff;">Privacy Policy</a>
-                <a href="#!" class="nav-link"  style="color: #fff;">Cookie Policy</a>
-            </nav>
+  <footer class="d-lg-none">
+
+    <footer id="footer" class="footer-1" style="background-color: #4b92dc;">
+      <div class="main-footer widgets-dark typo-light">
+        <div class="container">
+          <div class="row">
+
+
+
+
+
+
+
+
+
+            <br>
+            <br>
+
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="widget no-box">
+                <h5 class="widget-title">Contact Us<span></span></h5>
+                <p>With Our Skills & Creativity Put Together, You Get An Ensemble Capable Of Doing Anything And
+                  Everything Your Brand Needs. Subscribe Here To Get Our Latest Updates.</p>
+
+                <p class="font-weight-medium"> 2nd floor, Connect hive,Asiatic Business Centre,near technopark
+                  Kazhakuttam,Trivandrum
+                  Kerala,
+                  <br> 695582
+                  India, <br>
+                </p>
+                <p class="font-weight-medium">+91 8921674006
+                  <br> info@innodotsglobal.com
+                  <br>md@innodotsglobal.com
+
+                </p>
+                <div class="emailfield">
+                  <input type="text" name="email" value="Email">
+                  <input name="uri" type="hidden" value="arabiantheme">
+                  <input name="loc" type="hidden" value="en_US">
+                  <input class="submitbutton ripplelink" type="submit" value="Subscribe">
+                  </form>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <p>© Innodots Innovations 2024. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
         </div>
     </footer>
+  </footer>
 
+  <!-----------desktop view--------------------->
+
+
+  <footer class="new_footer_area bg_color d-none d-lg-block" style="background-color: rgba(34,23,115,255)">
+    <div class="new_footer_top">
+      <div class="container">
+        <div class="row">
+
+
+
+        </div>
+      </div>
+      <div class="footer_bg">
+        <div class="footer_bg_one"></div>
+        <div class="footer_bg_two"></div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-sm-7">
+            <p class="mb-0 f_400" style="color: #ddd;">© Innodots Innovations 2024. All rights reserved.</p>
+          </div>
+          <div class="col-lg-6 col-sm-5 text-right">
+            <p style="color: #ddd;"><i class="icon_heart"></i> @<a href="https://innodotstech.com/" target="_blank "
+                style="color: #ddd;">Innodots Innovations PVT LTD
+              </a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
         <script src="assets/vendors/wowjs/wow.min.js"></script>
         <script src="assets/vendors/popper.js/popper.min.js"></script>
         <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -594,25 +691,7 @@ a.author__img-wrapper img {
         <script>
         new WOW().init();
     </script>
-    <script>
-      /*=============== SHOW MENU ===============*/
-  const navMenu = document.getElementById('nav-menu'),
-        navToggle = document.getElementById('nav-toggle'),
-        navClose = document.getElementById('nav-close')
-  
-  /* Menu show */
-  navToggle.addEventListener('click', () =>{
-     navMenu.classList.add('show-menu')
-  })
-  
-  /* Menu hidden */
-  navClose.addEventListener('click', () =>{
-     navMenu.classList.remove('show-menu')
-  })
-  
-  
-  
-  </script>
+ 
 
    
 
